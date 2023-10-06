@@ -132,4 +132,14 @@ document.addEventListener("DOMContentLoaded", function () {
         // Reload the video player with the new source
         document.getElementById("custom-video-h").load();
     });
-});
+});if ('serviceWorker' in navigator && 'PushManager' in window) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then((registration) => {
+        console.log('Service Worker registered with scope:', registration.scope);
+      })
+      .catch((error) => {
+        console.error('Service Worker registration failed:', error);
+      });
+  });
+}
