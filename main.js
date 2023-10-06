@@ -132,7 +132,10 @@ document.addEventListener("DOMContentLoaded", function () {
         // Reload the video player with the new source
         document.getElementById("custom-video-h").load();
     });
-});if ('serviceWorker' in navigator && 'PushManager' in window) {
+});
+// Check if the browser supports service workers
+if ('serviceWorker' in navigator) {
+  // Listen for the "load" event to ensure all resources are loaded
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/service-worker.js')
       .then((registration) => {
@@ -141,5 +144,39 @@ document.addEventListener("DOMContentLoaded", function () {
       .catch((error) => {
         console.error('Service Worker registration failed:', error);
       });
+  });
+
+  // Listen for the "beforeinstallprompt" event to prompt for installation
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent the browser's default installation prompt
+    e.preventDefault();
+
+    // Store the event for later use
+    deferredInstallPrompt = e;
+
+    // Show a custom install button or banner
+    // For example, you can display a button with an "Install App" label
+    installButton.style.display = 'block';
+
+    // Attach an event listener to the custom install button
+    installButton.addEventListener('click', () => {
+      // Show the browser's installation prompt when the custom button is clicked
+      deferredInstallPrompt.prompt();
+
+      // Wait for the user to respond to the prompt
+      deferredInstallPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the PWA installation');
+        } else {
+          console.log('User declined the PWA installation');
+        }
+
+        // Reset the deferred prompt variable
+        deferredInstallPrompt = null;
+
+        // Hide the custom install button
+        installButton.style.display = 'none';
+      });
+    });
   });
 }
