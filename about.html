@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling for the body and header */
+        body {
+            font-family: Montserrat;
+        }
+
+        header {
+          padding-left: 10px;
+          padding-top: 20px;
+          display: flex;
+            color: black;
+            text-align: center;
+        }
+        header i{
+          padding-top: 5px;
+          font-size: 30px;
+        	color: black;
+        	padding-right: 20px;
+        }
+        /* Styles for the main content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Styles for the "About Us" section */
+        .about-us {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the "Credentials" section */
+        .credentials {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        /* Styles for headings and text */
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .about-us, .credentials {
+                padding: 10px;
+            }
+        }
+    </style>
+    <title>About Yogasana</title>
+</head>
+<body>
+    <header>
+        <a href="home.html"><i class='bx bx-arrow-back'></i></a><h1>About Yogasana</h1>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h2>Yogasana</h2>
+            <p>Yogasana Is an web app with a bunch of
+              features loaded in it.Various Yoga Courses for different
+               expertise levels, a lot of common as well as rare diseases
+              and yoga solution ayurvedic solution and diet chart for each of them
+            , contact us page, yoga gallery with pictures of some of the most difficult asanas performed by the instructors of Yogasana.
+            It will help the people to get motivated towards Yoga. And last but not the least night mode so that their is less stress on the eyes while the users are on the app.</p>
+        </section>
+        <section class="about-us">
+            <h2>Our Objectives</h2>
+            <p>The Objective to make Yogasana is to make everyone fit from mind as well as body.
+            Yogasana will help people to maintain their body. Eyeryone Deserves a healthy and a life free from diseases
+          which the app helps in giving them. Ayurvedic solutions help the people to cure any disease wih the help of
+        meditational herbs.</p>
+        </section>
+        <section class="credentials">
+            <h2>Credentials</h2>
+            <ul>
+                <li>Our team is well experienced and qualified.</li>
+                <li>The founder of Yogasana 'Jatin' is a Ui & Ux specialist and is well experienced
+                  in making websites and applications</li>
+                <li>Mr.Daya Krishan Joshi is a all India(Bharat)gold medalist in Yoga.
+                   Below are some documents of his achivements
+                  .</li>
+                  <section class="gallery min-vh-100">
+                     <div class="container-lg">
+                        <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                           <div class="col">
+                              <img src="c1.jpg" class="gallery-item" alt="gallery">
+                           </div>
+                           <div class="col">
+                              <img src="c2.jpg" class="gallery-item" alt="gallery">
+                           </div>
+                           </div>
+                           </div>
+                           </section>
+                <!-- Add more credentials here -->
+                <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                         <img src="img/1.jpg" class="modal-img" alt="modal img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </ul>
+        </section>
+    </main>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="maing.js"></script>
+</body>
+</html>

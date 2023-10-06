@@ -207,7 +207,7 @@ button {
   height: 50px;
 min-width: 55px;
 display: flex;
-font-size: 22px;
+font-size: 30px;
 align-items: center;
 justify-content: center;
 border-radius: 4px;
@@ -240,4 +240,7 @@ border-radius: 4px;
 }
 #ba{
   width: 140px;
+}
+nav{
+  overflow-y: scroll;
 }

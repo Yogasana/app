@@ -1,0 +1,35 @@
+/* Day mode styles (default) */
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Navbar styles in day mode */
+.navbar {
+  background-color: #fff;
+  color: white;
+}
+
+/* Div styles in day mode */
+.div-class {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Night mode styles */
+body.night-mode {
+  background-color: #00141e;
+  color: white;
+}
+
+/* Navbar styles in night mode */
+body.night-mode .navbar {
+  background-color: #00141e;
+  color: white;
+}
+
+/* Div styles in night mode */
+body.night-mode .div-class {
+  background-color: #00141e;
+  color: white;
+}
