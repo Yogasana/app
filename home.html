@@ -1,0 +1,112 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="menu-toggle" id="menu-toggle">
+       <img id="hamburger"src="hamburger.png" alt="Hamburger Icon">
+   </div>
+   <nav class="mobile-menu" id="mobile-menu">
+     <span class="nav_image">
+          <img id="lock-icon"src="icons.png" alt="logo_img" />
+        </span>
+        <span class="logo_name">Yogasana</span>
+    <ul class="menu-links">
+        <li><a href="#"><i class="bx bx-home-alt"></i> Home</a></li>
+        <li><a href="#"><i class="bx bx-grid-alt"></i>All Diseases</a></li>
+        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
+        <li><a href="#"><i class="fas fa-cogs"></i> Services</a></li>
+        <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+</nav>
+
+    <div class="main">
+    <header>
+        <img src="user-profile.png"alt="Profile Image">
+        <h1>Greetings!</h1>
+    </header>
+
+    <div class="container" id="cc">
+        <h2 id="ch">Courses</h2>
+        <div class="flexbox-container">
+            <a href="beginner.html"><div class="flexbox-item item1">
+                <img src="log.png" alt="Course 1">
+              </a>
+                <div id="text">
+                <h3>Beginner</h3>
+                <p>8 Sessions</p>
+              </div>
+            </div>
+            <div class="flexbox-item item1">
+                <a href="intermediate.html"><img src="inter.jpg" alt="Course 1"></a>
+                <div id="text">
+                <h3>Intermediate</h3>
+                <p>5 Sessions</p>
+              </div>
+            </div>
+            <div class="flexbox-item item1">
+                <a href="advance.html"><img src="ad.jpg" alt="Course 1"></a>
+                <div id="text">
+                <h3>Advance</h3>
+                <p>3 Sessions</p>
+              </div>
+            </div>
+            <div class="flexbox-item item1">
+                <img src="medi.jpg" alt="Course 1">
+                <div id="text">
+                <h3>Meditation</h3>
+                <p>10 Sessions</p>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="dc">
+        <div id="dsa"><h2>Diseases</h2> <a href="diseases.html"><button id="sa">See All</button></a></div>
+        <div class="diseases-container">
+            <div class="disease-box">
+                <img class="di"src="Indigestion.jpeg" alt="Disease 1">
+                <div id="tb">
+                <h3>Indigestion</h3>
+                <div class="bco">
+                <a href="yogaSolutionIn.html"><button class="b1">Yoga Solution</button></a>
+                <a href="ayurSolIn.html"><button class="b2">Ayurvedic Solution</button></a>
+                <a href="dietChartIn.html"><button class="b3">Diet Chart</button></a>
+              </div>
+              </div>
+            </div>
+            <div class="disease-box">
+                <img class="di"src="diabetes.png" alt="Disease 1">
+                <div id="tb">
+                <h3>Diabetes</h3>
+                <div class="bco">
+                <a href="yogaSolDia.html"><button class="b1">Yoga Solution</button></a>
+                <a href="ayurSloDia.html"><button class="b2">Ayurvedic Solution</button></a>
+                <a href="dietChartDia.html"><button class="b3">Diet Chart</button></a>
+              </div>
+              </div>
+            </div>
+            <div class="disease-box">
+                <img id="ba"class="di"src="eyestrain.png" alt="Disease 1">
+                <div id="tb">
+                <h3>Eye Problems</h3>
+                <div class="bco">
+                <a href="yogaSolEye.html"><button class="b1">Yoga Solution</button></a>
+                <a href="ayurSolEye.html"><button class="b2">Ayurvedic Solution</button></a>
+                <a href="dietChartEye.html"><button class="b3">Diet Chart</button></a>
+              </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="main.js" charset="utf-8"></script>
+</body>
+</html>

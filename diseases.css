@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header {
+    color: black;
+    padding: 20px;
+}
+#ad{
+  margin-top: -15px;
+}
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-left: 20px;
+    margin-top: -3px;
+}
+i{
+  color: black;
+  font-size: 30px;
+}
+.header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Diseases Box Styles */
+.disease-box {
+    height: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    width: 315px;
+    margin-left: 10px;
+    height: 120px;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: row; /* Arrange content in a row */
+}
+
+.box-image img {
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.box-details {
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    margin-top: -25px;
+    margin-left: 10px; /* Add space between image and details */
+}
+
+.box-details h2 {
+    font-size: 20px;
+}
+
+.box-details p {
+    margin: 10px 0;
+}
+
+.buttons {
+  margin-top: -20px;
+    display: flex;
+    flex-direction: column; /* Arrange buttons in a column */
+}
+
+.buttons button {
+      font-family: 'Montserrat';
+      width: 195px;
+      display: inline-block;
+      padding: 8px 20px;
+      margin-top: 5px;
+      margin-left: -5px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff; /* Text color */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.b2{
+    background-color: #50c878;
+
+}
+.b3{
+  background-color: #0073cf;
+}
+.b1{
+  background-color: #ff6700;
+}
+.dci{
+  margin-left: -10px;
+  margin-top: -10px;
+}
+#dcic{
+  height: 150px;
+  width: 180px;
+  margin-left: -40px;
+}
+#bd{
+  margin-left: -2px;
+}

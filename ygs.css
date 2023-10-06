@@ -1,0 +1,158 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+}
+
+/* App Bar Styles */
+.app-bar {
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.app-bar i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.app-bar h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-left: 20px;
+}
+.big-text {
+    text-align: left;
+    margin: 20px 0;
+    margin-left: 20px;
+}
+
+.big-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Small Text Styles */
+.small-text {
+    text-align: left;
+    margin: 10px 0;
+    margin-left: 28px;
+    margin-top: -20px;
+}
+
+.small-text p {
+    font-size: 15px;
+}
+
+/* Paragraph Styles */
+.paragraph {
+    text-align: left;
+    padding: 20px;
+    margin-top: -30px;
+    margin-left: 2px;
+}
+
+.paragraph p {
+    font-size: 16px;
+}
+
+/* Video Styles */
+.video {
+    text-align: center;
+}
+
+
+
+select {
+    padding: 10px;
+    font-size: 16px;
+}
+video{
+  height: 200px;
+  width: 100%;
+}
+
+.faq-section {
+    margin: 20px;
+}
+
+.faq-item {
+    font-family: 'Montserrat';
+    height: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-left: -10px;
+    width: 310px;
+}
+
+.question-container {
+    display: flex;
+    margin-top: -10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question {
+    font-family: 'Montserrat';
+    background-color: white;
+    border: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.answer {
+    margin-top: -28px;
+    text-align: left;
+    display: none;
+    padding: 10px;
+}
+
+.faq-item i {
+    font-size: 30px;
+    cursor: pointer;
+    color: black
+}
+
+/* Adjust margin to create space between items */
+.faq-item + .faq-item {
+    margin-top: 10px;
+}
+.language-switcher {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+#s{
+  font-size: 13px;
+}
+#s1{
+  font-size: 12px;
+}
+#s2{
+  font-size: 14px;
+}

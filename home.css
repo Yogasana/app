@@ -1,0 +1,243 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    font-size: 18px;
+
+}
+#cc{
+  margin-top: -50px;
+}
+header img {
+    background-color:#0096FF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    /* margin-top: 50px; */
+    margin-right: 250px;
+    border-width: 1px;
+    border-color: #0096FF;
+    border-style: solid;
+}
+#hamburger{
+  background-color: !important transparent;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 300px;
+  padding-top: : 50px;
+
+}
+header h1{
+  margin-right: 120px;
+  margin-bottom: 10px;
+}
+.container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+}
+#ch{
+  padding-left: 5px;
+}
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+    height: 210px;
+    scroll-behavior: smooth;
+}
+.main{
+  overflow-x: hidden;
+}
+.main::-webkit-scrollbar {
+    width: 0;
+}
+.flexbox-container::-webkit-scrollbar {
+    width: 0;
+}
+#text{
+  margin-top: -40px;
+  padding-left: 10px;
+}
+#dc{
+  margin-top: -80px;
+  padding-left: 30px;
+}
+#text p{
+  margin-top: -20px;
+}
+.flexbox-item {
+    width: 200px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    height: 180px;
+}
+.flexbox-item img{
+  width: 150px;
+  height: 150px;
+}
+.diseases-container {
+    width: calc(100% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+}
+#ba{
+  width: 500px;
+}
+.item1{
+  margin-left: 5px;
+}
+#tb{
+  display: flex;
+  flex-direction: column;
+}
+.di{
+  height: 140px;
+  width: 140px;
+  border-radius: 10px;
+}
+.disease-box h3 {
+   margin-top: -1px;
+   padding-left: 10px;
+}
+.bco{
+  padding-left: 10px;
+  margin-top: -20px;
+}
+button {
+    font-family: 'Montserrat';
+    width: 180px;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#dsa{
+   display: flex;
+   justify-content: space-between;
+}
+#dsa h2{
+  margin-left: -20px;
+}
+#sa{
+  background-color: transparent;
+  color: #0096FF;
+  margin-right: -70px;
+}
+.b2{
+    background-color: #50c878;
+    font-size: 14px;
+}
+.b3{
+  background-color: #0073cf;
+}
+.b1{
+  background-color: #ff6700;
+}
+.disease-box {
+    width: 335px;
+    display: flex;
+    padding: 10px;
+    margin-left: -30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+/* Mobile Menu Styles */
+.menu-toggle {
+    cursor: pointer;
+}
+
+.mobile-menu {
+    padding-left: 20px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden to the left */
+    width: 250px;
+    height: 100%;
+    transition: left 0.3s ease;
+}
+
+.menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.menu-links li {
+    margin: 10px 0;
+}
+
+.menu-links a {
+    font-family: 'Montserrat';
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: flex;
+    align-items: center; /* Center text and icon vertically */
+}
+
+.menu-links i {
+  height: 50px;
+min-width: 55px;
+display: flex;
+font-size: 22px;
+align-items: center;
+justify-content: center;
+border-radius: 4px;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .mobile-menu.active {
+        left: 0; /* Show the menu from the left */
+    }
+}
+.logo_items {
+  gap: 8px;
+}
+.logo_name {
+  font-size: 22px;
+  color: #333;
+  font-weight: 500px;
+  transition: all 0.3s ease;
+}
+#lock-icon {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  color: #4070f4;
+  font-size: 25px;
+  cursor: pointer;
+  margin-bottom: -20px;
+  transition: all 0.3s ease;
+}
+#ba{
+  width: 140px;
+}
