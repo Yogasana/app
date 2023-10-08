@@ -244,3 +244,46 @@ border-radius: 4px;
 nav{
   overflow-y: scroll;
 }
+/* Styles for larger screens */
+.large-screen {
+    display: none;
+}
+
+#bsi{
+  height: 300px;
+  width: 400px;
+
+}
+#switchButton{
+  margin-left: 100px;
+}
+/* Media query for screens wider than 425px */
+@media screen and (min-width: 768px) {
+    .large-screen {
+        display: block;
+        align-items: center;
+        margin-top: 120px;
+        margin-left: 500px;
+    }
+    .large-screen h1{
+      align-items: center;
+      margin-left: 50px;
+    }
+    .large-screen p{
+      margin-left: -25px;
+    }
+    .large-screen button{
+      display: block;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #6CB4EE;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+    }
+    .small-screen {
+        display: none;
+    }
+}
