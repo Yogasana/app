@@ -152,3 +152,11 @@ nightModeToggle.addEventListener('click', () => {
     nightModeToggle.classList.add('night-mode-off');
   }
 });
+// Get the button element
+const switchButton = document.getElementById('switchButton');
+
+// Add a click event listener to the button
+switchButton.addEventListener('click', () => {
+    // Redirect to the laptop version of your website
+    window.location.href = 'https://jatinjoshi1.github.io/Yogasana.com/'; // Replace with the actual URL of your laptop version
+});
